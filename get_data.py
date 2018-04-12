@@ -16,7 +16,7 @@ def cleantxt(txt):
 
 def load_data():
     """
-    Loads data from FTEST if *test* is True, otherwise from FTRAIN.
+    Loads data from data.csv and returns train(20%), val(20%) and test(20%) splits
     Important that the files are in a `data` directory
     """  
     df = pd.read_csv("data/data.csv")
